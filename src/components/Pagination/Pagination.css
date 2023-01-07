@@ -1,0 +1,39 @@
+.pagination {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem 0rem;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.pagination-control > button {
+    width: max-content;
+    height: max-content;
+    background-color: var(--color-primary);
+    border-radius: 3px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.pagination-control > button > svg{
+    color: var(--text-white);
+}
+
+.pagination-control > p {
+    padding: 0 0.3rem;
+    color: var(--text-white);
+    text-align: center;
+}

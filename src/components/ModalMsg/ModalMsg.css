@@ -1,0 +1,22 @@
+.modalMsg-container {
+    width: 15rem;
+    height: max-content;
+    position: fixed;
+    top: 5%;
+    right: 2.5%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--background-color);
+    border-radius: 10px;
+    background: var(--color-secondary);
+}
+.modalMsg-container > p {
+    color: var(--text-white);
+    padding: 0.5rem;
+}
+
+@media (min-width: 600px){
+    .modalMsg-container {
+        width: max-content;
+        right: 5%;
+    }
+}

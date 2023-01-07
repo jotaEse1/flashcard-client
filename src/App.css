@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+
+/*Disable arrows in input type number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/*
+#0070f3
+#222
+#0D323C
+*/
+:root {
+    --background-color: #111;
+    --background-color-opacity-9: #1119;
+    --color-primary: #0070f3;
+    --color-primary-opacity: rgba(0, 112, 243, 0.161);
+    --color-secondary:  #444;
+    --color-secondary-opacity:  rgb(68, 68, 68, 0.161);
+    --color-learning: #f6ff00;
+    --color-mature: #002bff;
+    --text-white: #e7e8e9;
+    --text-black: #000;
+    --text-primary: #0077ff;
+    --text-secondary: #444;
+    --text-learning: #f6ff00;
+    --text-mature: #002bff;
+    --transition-slow: color 0.35s ease, border-color 0.35s ease;
+    --transition-fast: color 0.15s ease, border-color 0.15s ease;
+}

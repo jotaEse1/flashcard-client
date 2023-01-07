@@ -1,0 +1,27 @@
+.deck-page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.deck-page-navbar > h1 {
+    text-align: center;
+    color: var(--text-white);
+    padding: 0 0.2rem;
+}
+
+.deck-page-navbar {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0.5rem;
+}
+
+
+
+

@@ -1,0 +1,46 @@
+.options-window-modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0008;
+}
+
+.options-window-container {
+    width: 85vw;
+    height: 80vh;
+    position: relative;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+
+.options-window-content {
+    height: 100%;
+    width: 100%;
+}
+
+.options-window-button {
+    position: absolute;
+    top: 0.1rem;
+    right: 0.1rem;
+    background-color: transparent;
+    border: none;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.options-window-button > svg{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+@media (min-width: 520px) {
+    .options-window-container {
+        width: 25rem !important;
+    }
+}

@@ -1,0 +1,11 @@
+.upload-button {
+    /* position: absolute;
+    top: 1.1rem;
+    right: 1rem; */
+    cursor: pointer;
+}
+
+.upload-button > svg {
+    color: var(--color-primary);
+    font-size: 2rem;
+}

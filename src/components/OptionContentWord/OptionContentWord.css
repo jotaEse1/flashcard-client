@@ -1,0 +1,108 @@
+.word-list-container {
+    width: 100%;
+    height: max-content;
+    padding: 0.3rem;
+    border-radius: 5px;
+    margin-bottom: 0.55rem;
+    background-color: var(--background-color);
+    box-shadow: #000 0px 5px 9px;
+    position: relative;
+    /* border: 1px solid var(--color-primary); */
+}
+
+.word-list-front {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    /* justify-content: space-between; */
+    /* background-color: red; */
+}
+
+.t-word {
+    width: 80%;
+    color: var(--text-white);
+    padding: 0.2rem;
+    overflow: hidden;
+    margin-right: auto;
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+}
+
+.t-word-modality-learning {
+    display: flex;
+    justify-content: center;
+    width: 1.5rem;
+    border: 1px solid var(--color-learning);
+    padding: 0.30rem;
+    border-radius: 3px;
+    align-self: flex-start;
+    margin-right: 0.2rem;
+    margin-bottom: 0.1rem;
+    color: var(--text-learning);
+}
+
+.t-word-modality-mature {
+    display: flex;
+    justify-content: center;
+    width: 1.5rem;
+    border: 1px solid var(--color-mature);
+    padding: 0.30rem;
+    border-radius: 3px;
+    align-self: flex-start;
+    margin-right: 0.2rem;
+    margin-bottom: 0.1rem;
+    color: var(--text-mature);
+}
+
+.word-list-front > div {
+    align-self: flex-start;
+}
+
+.word-list-front > div > svg {
+    color: var(--text-white);
+    font-size: 1rem;
+    transform: rotate(180deg);
+}
+
+.w-word {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 0.2rem;
+    border-top: 1px solid var(--color-primary);
+}
+
+.w-word > p:first-child {
+    color: var(--text-primary);
+    padding: 0.2rem 0.6rem 0.2rem 0.2rem;
+}
+
+.w-word > p:nth-child(2) {
+    padding: 0.3rem;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: var(--transition-fast);
+}
+
+.w-word > p:nth-child(2):hover {
+    border-color: var(--color-primary);
+    
+}
+
+.w-word > p > svg {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+}
+
+.word-opened {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.word-closed {
+    transform: rotate(0deg);
+    cursor: pointer;
+}

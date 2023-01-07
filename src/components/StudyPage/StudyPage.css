@@ -1,0 +1,103 @@
+.study-page-container {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 1rem;
+}
+
+.button-back-row{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.study-page-container > h1{
+    color: var(--text-white);
+    padding-bottom: 0.5rem;
+    justify-self: flex-start;
+}
+
+.study-page-words {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.study-page-words > h3{
+    color: var(--text-white);
+    font-size: 1.3rem;
+}
+
+.study-page-words > p{
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+}
+
+.study-page-container > button{
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    padding: 0.3rem;
+    font-size: 0.95rem;
+    color: var(--text-white);
+    cursor: pointer;
+    transition: var(--transition-slow);
+    margin-top: 2.5rem;
+}
+
+.study-page-container > button:hover{
+    color: var(--text-primary);
+}
+
+.study-msg-container {
+    width: 90vw;
+    height: max-content;
+    position: fixed;
+    top: 4rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.study-msg-container > h2 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+}
+
+.study-msg-container > p {
+    font-size: 1.3rem;
+    color: var(--text-white);
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+@media (min-width: 600px){
+    .study-page-container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .study-msg-container {
+        width: 30rem;
+    }
+
+    .study-page-container > h1{
+        flex-grow: 0;
+    }
+
+    /* .study-page-container > button{
+        flex-grow: 5;
+    } */
+}

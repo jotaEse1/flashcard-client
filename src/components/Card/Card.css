@@ -1,0 +1,24 @@
+.card {
+    width: 90%;
+    height: 70vh;
+    flex-grow: 9;
+}
+
+.word {
+    font-size: 1.5rem;
+    color: var(--text-white);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+@media (min-width: 600px){
+    .card {
+        width: 60vw;
+        height: 60vh;
+        flex-grow: 0;
+    }
+
+    .word {
+        font-size: 2rem;
+    }
+}
